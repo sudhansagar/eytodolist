@@ -1,0 +1,89 @@
+2022-04-01 23:29:51 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-01 23:29:51 - Initializing Servlet 'dispatcherServlet'
+2022-04-01 23:29:51 - Detected StandardServletMultipartResolver
+2022-04-01 23:29:51 - Detected AcceptHeaderLocaleResolver
+2022-04-01 23:29:51 - Detected FixedThemeResolver
+2022-04-01 23:29:51 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6581dc0a
+2022-04-01 23:29:51 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f354bcf
+2022-04-01 23:29:51 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-04-01 23:29:51 - Completed initialization in 2 ms
+2022-04-01 23:29:51 - GET "/", parameters={}
+2022-04-01 23:29:51 - Mapped to com.ey.todo.controller.AppController#homePage()
+2022-04-01 23:29:51 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-04-01 23:29:51 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-01 23:29:51 - View name 'login', model {Users=com.ey.todo.dao.Users@6e24c4bd, org.springframework.validation.BindingResult.Users=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2022-04-01 23:29:51 - Forwarding to [/WEB-INF/views/login.jsp]
+2022-04-01 23:29:52 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-04-01 23:29:52 - Completed 200 OK
+2022-04-01 23:30:05 - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-04-01 23:30:05 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:15 - POST "/login", parameters={masked}
+2022-04-01 23:30:15 - Mapped to com.ey.todo.controller.AppController#login(ModelMap, String, String)
+2022-04-01 23:30:15 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-04-01 23:30:15 - ------------Inside login()---------------
+2022-04-01 23:30:15 - select * from users where username= ? and password=? 
+2022-04-01 23:30:15 - Result set row: 0
+2022-04-01 23:30:15 - Result row: EntityKey[com.ey.todo.dao.Users#1]
+2022-04-01 23:30:15 - Resolving attributes for [com.ey.todo.dao.Users#1]
+2022-04-01 23:30:15 - Processing attribute `password` : value = m
+2022-04-01 23:30:15 - Attribute (`password`)  - enhanced for lazy-loading? - false
+2022-04-01 23:30:15 - Processing attribute `username` : value = m
+2022-04-01 23:30:15 - Attribute (`username`)  - enhanced for lazy-loading? - false
+2022-04-01 23:30:15 - Done materializing entity [com.ey.todo.dao.Users#1]
+2022-04-01 23:30:15 - UserID is::1
+2022-04-01 23:30:15 - ------------Exiting login()---------------
+2022-04-01 23:30:15 - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-04-01 23:30:15 - View name 'home', model {Users=com.ey.todo.dao.Users@5ce1a630, userObj=1, org.springframework.validation.BindingResult.Users=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userObj=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+2022-04-01 23:30:15 - Forwarding to [/WEB-INF/views/home.jsp]
+2022-04-01 23:30:16 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2022-04-01 23:30:16 - Completed 200 OK
+2022-04-01 23:30:35 - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2022-04-01 23:30:35 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:45 - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2022-04-01 23:30:45 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@9f70c54, started on Fri Apr 01 23:29:31 IST 2022
+2022-04-01 23:30:45 - Stopping beans in phase 2147483647
+2022-04-01 23:30:45 - Bean 'webServerGracefulShutdown' completed its stop procedure
+2022-04-01 23:30:45 - Stopping beans in phase 2147483646
+2022-04-01 23:30:45 - Bean 'webServerStartStop' completed its stop procedure
+2022-04-01 23:30:45 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-04-01 23:30:45 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-01 23:30:45 - HHH000031: Closing
+2022-04-01 23:30:45 - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-04-01 23:30:45 - drop table if exists tasks CASCADE 
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn0: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn1: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn2: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn3: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn4: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn5: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Add connection elided, waiting 1, queue 9
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn6: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn7: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn8: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn9: url=jdbc:h2:mem:testdb user=SA: (connection is dead)
+2022-04-01 23:30:45 - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2022-04-01 23:30:45 - HikariPool-1 - Added connection conn11: url=jdbc:h2:mem:testdb user=SA
+2022-04-01 23:30:45 - drop table if exists users CASCADE 
+2022-04-01 23:30:45 - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@389f1079] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1033576a]
+2022-04-01 23:30:45 - HikariPool-1 - Added connection conn12: url=jdbc:h2:mem:testdb user=SA
+2022-04-01 23:30:45 - HikariPool-1 - Added connection conn13: url=jdbc:h2:mem:testdb user=SA
+2022-04-01 23:30:45 - HikariPool-1 - After adding stats (total=3, active=0, idle=3, waiting=0)
+2022-04-01 23:30:45 - HikariPool-1 - Added connection conn14: url=jdbc:h2:mem:testdb user=SA
+2022-04-01 23:30:45 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2022-04-01 23:30:45 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2022-04-01 23:30:45 - HikariPool-1 - Added connection conn15: url=jdbc:h2:mem:testdb user=SA
+2022-04-01 23:30:45 - HikariPool-1 - Shutdown initiated...
+2022-04-01 23:30:45 - HikariPool-1 - Added connection conn16: url=jdbc:h2:mem:testdb user=SA
+2022-04-01 23:30:45 - HikariPool-1 - Before shutdown stats (total=6, active=0, idle=6, waiting=0)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn11: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn12: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn13: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn14: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn15: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2022-04-01 23:30:45 - HikariPool-1 - Closing connection conn16: url=jdbc:h2:mem:testdb user=SA: (connection evicted)
+2022-04-01 23:30:45 - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+2022-04-01 23:30:45 - HikariPool-1 - Shutdown completed.
