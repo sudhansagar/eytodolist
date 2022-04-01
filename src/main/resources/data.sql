@@ -19,7 +19,7 @@ CREATE TABLE Tasks (
 
 INSERT INTO Users (username, password) VALUES
   ('test', 'pwd123'),
-  ('raki', 'Raki123'),
+  ('madhu', 'madhu123'),
   ('foo', 'Foo123'),('sam','Sam123');
 
 INSERT INTO Tasks (task_description, datetime, userid) VALUES
